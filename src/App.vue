@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ProductListing } from "@/regions/product-listing";
+</script>
 
 <template>
-  <main></main>
+  <main>
+    <ProductListing />
+  </main>
 </template>
