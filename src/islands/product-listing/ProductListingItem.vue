@@ -38,7 +38,10 @@ const formattedPrice = computed(() => formatPrice(props.product.price));
       <h3>{{ formattedPrice }} <small>netto</small></h3>
 
       <div class="product-listing__item__actions">
-        <button class="add-to-cart-action">
+        <button
+          class="add-to-cart-action"
+          title="Het is nog niet mogelijk producten te bestellen"
+        >
           <AddToCardIcon />
         </button>
 
@@ -115,6 +118,7 @@ const formattedPrice = computed(() => formatPrice(props.product.price));
   background: var(--color-secondary);
   border: 0;
   border-radius: 6px;
+  cursor: not-allowed;
   padding: 0.725rem 1rem;
 }
 
