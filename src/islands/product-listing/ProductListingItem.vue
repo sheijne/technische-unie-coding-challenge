@@ -38,7 +38,7 @@ const formattedPrice = computed(() => formatPrice(props.product.price));
       <h3>{{ formattedPrice }} <small>netto</small></h3>
 
       <div class="product-listing__item__actions">
-        <button class="add-to-card-action">
+        <button class="add-to-cart-action">
           <AddToCardIcon />
         </button>
 
@@ -111,7 +111,7 @@ const formattedPrice = computed(() => formatPrice(props.product.price));
   justify-content: space-between;
 }
 
-.add-to-card-action {
+.add-to-cart-action {
   background: var(--color-secondary);
   border: 0;
   border-radius: 6px;
