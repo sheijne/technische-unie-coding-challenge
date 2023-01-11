@@ -1,1 +1,41 @@
 @import "./base.css";
+
+p, span {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+}
+
+h1 > small,
+h2 > small,
+h3 > small {
+    font-size: 0.475em;
+}
+
+h1 {
+    color: var(--color-primary);
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .85;
+    transition: opacity .15s ease;
+}
