@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@playwright/test': ^1.28.1
   '@rushstack/eslint-patch': ^1.1.4
   '@types/node': ^18.11.12
   '@vitejs/plugin-vue': ^4.0.0
@@ -21,7 +20,6 @@ dependencies:
   vue: 3.2.45
 
 devDependencies:
-  '@playwright/test': 1.29.2
   '@rushstack/eslint-patch': 1.2.0
   '@types/node': 18.11.18
   '@vitejs/plugin-vue': 4.0.0_vite@4.0.4+vue@3.2.45
@@ -315,15 +313,6 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
-    dev: true
-
-  /@playwright/test/1.29.2:
-    resolution: {integrity: sha512-+3/GPwOgcoF0xLz/opTnahel1/y42PdcgZ4hs+BZGIUjtmEFSXGg+nFoaH3NSmuc7a6GSFwXDJ5L7VXpqzigNg==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dependencies:
-      '@types/node': 18.11.18
-      playwright-core: 1.29.2
     dev: true
 
   /@rushstack/eslint-patch/1.2.0:
@@ -1794,12 +1783,6 @@ packages:
   /pify/3.0.0:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
-    dev: true
-
-  /playwright-core/1.29.2:
-    resolution: {integrity: sha512-94QXm4PMgFoHAhlCuoWyaBYKb92yOcGVHdQLoxQ7Wjlc7Flg4aC/jbFW7xMR52OfXMVkWicue4WXE7QEegbIRA==}
-    engines: {node: '>=14'}
-    hasBin: true
     dev: true
 
   /postcss-selector-parser/6.0.11:
