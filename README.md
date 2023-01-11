@@ -1,65 +1,57 @@
-# product-overview
+# Coding challenge Technische Unie: Product listing
 
-This template should help get you started developing with Vue 3 in Vite.
+This application is my input for the coding challenge from the Technische Unie.
 
-## Recommended IDE Setup
+## Business wish
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Using the provided product data, create a PLP (Product Listing Page) based on the following
+Acceptance Criterium:
 
-## Type Support for `.vue` Imports in TS
+- As a customer, I want an overview of products with the following properties:
+  title, image, description, price
+- As a customer, I want a sorted overview based on the ascending price
+  (no need to create a switch here, just hardcode the order)
+- As a customer, I want to be able to add and remove individually favorited products
+- As a customer, I want to see a list of my favorite products
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Requirements
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- For design reference have a look at this figma file, the font used is Montserrat
+- Forego old browser compatibility- the demo should work in the latest version of Chrome or
+  Firefox
+- Use anything you like within the Vue community code-wise
+- Keep it lean and mean within a 2-hour limit; no need to go fancy
+- Deliver your code on GitHub (or any other public git service) and share the link to it with us
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Design
 
-## Customize configuration
+The original designs for the product listing application can be found on figma: https://www.figma.com/file/cl1bPObXd2iCAXOSXv1Cyz/PLP-Test-page?node-id=0%3A1&t=5LN6jSUALm44GT1C-1
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Contributing
 
-## Project Setup
+This project was build using the following technologies:
+
+- [PNPM](https://pnpm.io/motivation)
+- [Vite](https://vitejs.dev/guide/)
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [Vue](https://vuejs.org/guide/introduction.html)
+- [ESLint](https://eslint.org/docs/latest/user-guide/getting-started)
+- [Prettier](https://prettier.io/docs/en/index.html)
+
+### Project Setup
 
 ```sh
-npm install
+pnpm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
-
-```sh
-# Install browsers for the first run
-npx playwright install
-
-# When testing on CI, must build the project first
-npm run build
-
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
+pnpm run dev
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-npm run lint
+pnpm run lint
 ```
